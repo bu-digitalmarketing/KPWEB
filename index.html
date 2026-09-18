@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="th" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โปรไฟล์ส่วนตัว</title>
+<meta name="description" content="เว็บโปรไฟล์ส่วนตัว">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">ข้ามไปเนื้อหาหลัก</a>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="brand-mark" id="brandMark">K</span><span id="brandName">Profile</span></a>
+    <nav class="nav-links" aria-label="เมนูหลัก">
+      <a href="#about">เกี่ยวกับ</a>
+      <a href="#experience">ประสบการณ์</a>
+      <a href="#skills">ทักษะ</a>
+      <a href="#projects">ผลงาน</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="สลับธีมสว่าง/มืด">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow" id="heroBadge"></p>
+        <h1 id="heroName"></h1>
+        <p class="headline" id="heroHeadline"></p>
+        <p class="tagline" id="heroTagline"></p>
+        <p class="meta" id="heroLocation"></p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">ติดต่อผม</a>
+          <a class="btn btn-ghost" href="#projects">ดูผลงาน</a>
+        </div>
+        <ul class="socials" id="heroSocials"></ul>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img id="heroAvatar" alt="รูปโปรไฟล์" loading="eager">
+          <div class="photo-fallback" id="photoFallback"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap"><ul class="stats" id="stats"></ul></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2 class="h2"><span class="num">01</span>เกี่ยวกับฉัน</h2>
+      <div class="about-grid">
+        <div class="about-text" id="aboutText"></div>
+        <aside class="card interests">
+          <h3>ความสนใจ</h3>
+          <ul id="interests"></ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE + EDUCATION -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <h2 class="h2"><span class="num">02</span>ประสบการณ์ &amp; การศึกษา</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="h3">ประสบการณ์ทำงาน</h3>
+          <ol class="timeline" id="experience-list"></ol>
+        </div>
+        <div>
+          <h3 class="h3">การศึกษา</h3>
+          <ol class="timeline" id="education-list"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <h2 class="h2"><span class="num">03</span>ทักษะ</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <h2 class="h2"><span class="num">04</span>ผลงาน</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <h2 class="h2"><span class="num">05</span>ติดต่อ</h2>
+      <div class="contact-card card">
+        <p class="contact-lead">สนใจร่วมงานหรืออยากคุยกันเฉย ๆ ทักมาได้เลยครับ</p>
+        <ul class="contact-list" id="contact-list"></ul>
+        <ul class="socials" id="contactSocials"></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span id="footerName"></span>
+    <span class="muted">© <span id="year"></span> — สร้างด้วย HTML, CSS และ JavaScript</span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
